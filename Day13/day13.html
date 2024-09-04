@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 13</title>
+</head>
+
+<body>
+
+    <h1>While loop</h1>
+    <h4 id="loop"></h4>
+
+    <h1>Switch</h1>
+    <h3 id="switch"></h3>
+
+
+
+    <script>
+        //objects
+        var student = {
+            Name: "Shekeeb",
+            Age: 22,
+            Place: "Malappuram"
+        }
+        console.log(student)
+        console.log(student.Name)
+
+
+        //array of objects
+        var students = [
+            {
+                Name: "Favas",
+                Age: 26,
+                Place: "Palakkad"
+            },
+            {
+                Name: "Vidhun",
+                Age: 25,
+                Place: "Calicut"
+            },
+            {
+                Name: "Midhlaj",
+                Age: 10,
+                Place: "Wayanad"
+            }]
+
+        console.log(students[0])
+        console.log(students[1].Place)
+
+
+        //while loop
+        text = ""
+        let i = 1
+        while (i <= 5) {
+            text = text + "<br><br>Number is " + i
+            i++
+        }
+        document.getElementById("loop").innerHTML = text
+
+
+        //switch
+        let day;
+        let getday = new Date().getDay();
+        switch (getday) {
+            case 0:
+                day = "Sunday"
+                break;
+            case 1:
+                day = "Monday"
+                break;
+            case 2:
+                day = "Tuesday"
+                break;  
+            case 3:
+                day = "Wednesday"
+                break; 
+            case 4:
+                day = "Thursday"
+                break;
+            case 5:
+                day = "Friday"
+                break; 
+            case 3:
+                day = "Saturday"
+                break; 
+        }
+        document.getElementById("switch").innerHTML="Today is "+day
+    </script>
+</body>
+
+</html>

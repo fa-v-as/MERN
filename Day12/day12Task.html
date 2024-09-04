@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        var array = ["shekeeb", "shammas", "favas", "vidhun", "midhlaj"]
+        var sorted = array.sort()
+        console.log(sorted)
+
+
+
+        var array1 = [10, 6, 200, 40]
+        var sort = array1.sort(
+            function (a, b) {
+                return a - b
+            }
+        )
+        console.log(sort)
+
+
+
+        function Anagrams(str1, str2) {
+            var str1sorted = str1.split('').sort().join()
+            var str2sorted = str2.split('').sort().join()
+            if (str1sorted == str2sorted) {
+                console.log("It is an anagram")
+            }
+            else {
+                console.log("It is not an anagram")
+            }
+        }
+        Anagrams("silent", "listen")
+        Anagrams("hello", "world")
+
+
+
+        function max(numbers) {
+            return Math.max(...numbers);
+        }
+        const numbers = [34, 7, 200, 32, 5, 62];
+        console.log(max(numbers));
+        
+
+
+        function oddeven(arr) {
+            var odd = [];
+            var even = [];
+            for (var i = 0; i < arr.length; i++) {
+                var number = arr[i];
+                if (number % 2 == 0) {
+                    even.push(number);
+                } else {
+                    odd.push(number);
+                }
+            }
+            return { odd: odd, even: even };
+        }
+        var result = oddeven([1, 4, 2, 8, 10, 3]);
+        console.log("odd:", result.odd);
+        console.log("even:", result.even);
+        
+        
+    </script>
+</body>
+
+</html>

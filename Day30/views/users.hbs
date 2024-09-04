@@ -1,0 +1,14 @@
+<h1>User Profile</h1>
+{{#if user.isActive}}
+    <p>Welcome <b>{{user.name}}</b>,Your account is active</p>
+{{else}}
+    <p>Hello <b>{{user.name}}</b>,Your account is inactive..! Please contact our customer support..!</p>
+{{/if}}
+
+
+{{!-- //opposite of if
+{{#unless}}   //false
+    <p></p>
+{{else}}      //true
+    <p></p>
+{{/unless}} --}}

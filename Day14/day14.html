@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 14</title>
+</head>
+
+<body>
+
+    <h1>Event Handlers</h1>
+    <button onclick="this.innerHTML=Date()">Current Time</button>
+    <br><br>
+
+    <button onclick="show('Good Morning')">Morning</button>
+    <button onclick="show('Good Evening')">Evening</button>
+    <h2 id="time"></h2>
+    <br><br>
+
+    <input type="text" id="mytext">
+    <button onclick="display()">Click Me</button>
+    <h2 id="display"></h2>
+
+
+    <div id="box" style="width: 30%;height: 300px;border: 1px solid black;"></div>
+    <button onclick="colors('red')">Red</button>
+    <button onclick="colors('green')">Green</button>
+    <button onclick="colors('blue')">Blue</button>
+    <button onclick="colors('yellow')">Yellow</button>
+
+    <script>
+        function show(text) {
+            document.getElementById("time").innerHTML = text
+        }
+
+
+        function display() {
+            var text = document.getElementById("mytext").value;
+            document.getElementById("display").innerHTML = text
+        }
+
+
+        function colors(color) {
+            document.getElementById("box").style.backgroundColor = color;
+        }
+    </script>
+    
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+.pagination0{
+    display: inline-block;
+}
+
+.pagination0 a{
+    text-decoration: none;
+    padding: 10px;
+    float: left;
+    border: 1px solid grey;
+}
+
+.active0{
+    border: 1px solid green;
+    background-color: lightgreen;
+}
+
+.pagination0 a:hover:not(.active0){
+    background-color: peachpuff;
+    color: white;
+}
+
+.pagination1{
+    display: inline-block;
+}
+
+.pagination1 a{
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    float: left;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.active1{
+    border: 1px solid green;
+    background-color: lightgreen;
+}
+
+.pagination1 a:hover:not(.active1){
+    background-color: peachpuff;
+    border: 1px solid red;
+}
+
+
+
+.drop-down-menu0{
+    display: inline-block;
+    position: relative;
+}
+
+.drop-down-button{
+    background-color: peachpuff;
+    border: 1px solid red;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.drop-down-content0{
+    display: none;
+    position: absolute;
+    background-color: blanchedalmond;
+    border: 1px solid blue;
+    text-decoration: none;
+    width: 80px;
+    z-index: 1;
+}
+
+.drop-down-content0 a{
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.drop-down-button:hover{
+    background-color: tomato;
+}
+
+.drop-down-menu0:hover .drop-down-content0{
+    display: block;
+}
+
+.drop-down-content0 a:hover{
+    background-color: aqua;
+}
+
+
+
+.drop-down-menu1{
+    display: inline-block;
+    position: relative;
+}
+
+.drop-down-text{
+    cursor: pointer;
+}
+
+.drop-down-content1{
+    display: none;
+    position: absolute;
+    box-shadow: 2px 2px 2px grey;
+    padding: 20px;
+    z-index: 1;
+    background-color: white;
+}
+
+.drop-down-menu1:hover .drop-down-content1{
+    display: block;
+}
+
+
+
+.drop-down-menu2{
+    display: inline-block;
+    position: relative;
+}
+
+.drop-down-menu2 img{
+    height: 50px;
+}
+
+.drop-down-content2 img{
+    height: 200px;
+}
+
+.drop-down-content2{
+    display: none;
+    position: absolute;
+    box-shadow: 2px 2px 4px grey;
+}
+
+.drop-down-content2 p{
+    text-align: center;
+}
+
+.drop-down-menu2:hover .drop-down-content2{
+    display: block;
+}

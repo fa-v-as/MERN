@@ -1,0 +1,67 @@
+.main{
+    background-color: peachpuff;
+    width: 50%;
+    height: 400px;
+    border: 2px solid tomato;
+    padding: 50px;
+}
+
+.box{
+    border: 2px solid blue;
+    background-color: aqua;
+    padding: 50px;
+    text-align: center;
+}
+
+.inner-box{
+    border: 2px solid red;
+    background-color: pink;
+    padding: 50px;
+}
+
+
+
+.new{
+    border: 2px solid green;
+    background-color: peachpuff;
+    margin: 30px;
+    display: flex;
+}
+
+.first{
+    border: 2px solid red;
+    padding: 50px;
+    margin: 50px;
+    background-color: aqua;
+}
+
+.second{
+    border: 2px solid red;
+    padding: 50px;
+    margin: 50px;
+    background-color: lightcyan;
+}
+
+.third{
+    border: 2px solid red;
+    padding: 50px;
+    margin: 50px;
+    background-color: lightblue;
+}
+
+.forth{
+    border: 2px solid red;
+    padding: 50px;
+    margin: 50px;
+    background-color: lightseagreen;
+}
+
+.column1{
+    width: 50%;
+    text-align: center;
+}
+
+.column2{
+    width: 50%;
+    text-align: center;
+}

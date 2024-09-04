@@ -1,0 +1,52 @@
+.h1{
+    /* Horizontal, Vertical, Blur, Shadow-Color */
+    text-shadow: 5px 5px 2px peachpuff;    
+}
+
+.h2{
+    text-shadow:6px 6px 3px peachpuff;
+    color: red;
+}
+
+.box{
+    box-shadow: 2px 2px 2px 2px aqua;
+}
+
+
+.position1{
+    position:static;
+}
+
+.position2{
+    position: relative;
+    left: 70px;
+    top: 30px;
+}
+
+.position3{
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+.position4{
+    position: relative;
+    border: 2px solid red;
+    margin: 50px;
+    padding: 10px;
+    height: 200px;
+}
+
+.position4a{
+    position: absolute;
+    border: 2px solid green;
+    top: 70px;
+    left: 100px;
+}
+
+.position5{
+    position: sticky;
+    background-color: peachpuff;
+    border: 1px solid green;
+    top: 0;
+}

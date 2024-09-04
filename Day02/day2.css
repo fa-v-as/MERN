@@ -1,0 +1,23 @@
+form{
+    padding: 30px;
+    background-color: peachpuff;
+    color: tomato;
+}
+form input{
+    margin-top: 10px;
+    background-color: white;
+    border: 1px solid tomato;
+    color: tomato;
+}
+
+form input::placeholder{
+    color: peachpuff;;
+}
+
+form input:hover{
+    background-color: aquamarine;
+}
+
+.para{
+    color: red;
+}

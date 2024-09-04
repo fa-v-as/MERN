@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //Simple inheritance
+        class Sample {
+            SampleHello() {
+                console.log("Hi Favas")
+            }
+        }
+
+        class Hello extends Sample {
+            constructor(num1, num2) {
+                super()
+                this.num1 = num1;
+                this.num2 = num2;
+            }
+            hai() {
+                console.log("Sum=" + (this.num1 + this.num2))
+            }
+        }
+        let obj1 = new Hello(20, 10)
+        obj1.hai()
+        obj1.SampleHello()
+
+
+
+        //Arrow Function with argument
+        function add(a, b) {
+            return (a + b)
+        }
+        console.log(add(20, 30))
+
+        let add1 = (c, d) => {
+            console.log(c + d)
+        }
+        add1(20, 40)
+
+
+        //Arrow function without argument
+        let display = () => {
+            console.log("Welcome")
+        }
+        display()
+
+
+        //JSON
+        var text = '[{"firstName":"Shekeeb","Place":"Malappuram"},{"firstName":"Favas","Place":"Palakkad"}]';
+        var obj = JSON.parse(text);
+        name = obj[1].firstName + " from " + obj[1].Place;
+        document.write(name)
+
+    </script>
+
+</body>
+
+</html>

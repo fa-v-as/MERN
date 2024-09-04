@@ -1,0 +1,72 @@
+.animation {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    animation: move 5s infinite;
+    border-radius: 30px;
+}
+
+@keyframes move {
+    0% {
+        left: 0px;
+        top: 0px;
+        background-color: aqua;
+    }
+
+    25% {
+        left: 250px;
+        top: 0px;
+        background-color: lightgreen;
+    }
+
+    50% {
+        left: 250px;
+        top: 250px;
+        background-color: peachpuff;
+    }
+
+    75% {
+        left: 0px;
+        top: 250px;
+        background-color: lightblue;
+    }
+
+    100% {
+        left: 0px;
+        top: 0px;
+        background-color: aqua;
+    }
+}
+
+
+.flex-container {
+    margin-top: 300px;
+    display: flex;
+    background-color: lightgreen;
+    flex-direction: column;
+    width: 30%;
+}
+
+.flex-container div {
+    margin: 10px;
+    padding: 10px;
+    background-color: aqua;
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+}
+
+
+.flex-container1 {
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+}
+
+.flex-container1 div {
+    margin: 10px;
+    padding: 10px;
+    background-color: peachpuff;
+    width: 50px;
+    text-align: center;
+}

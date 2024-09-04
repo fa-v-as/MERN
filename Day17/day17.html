@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 17</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        //  Nested function
+        function display() {
+            var h = "hello"
+            function myfunction() {
+                i = 0
+                if (i === 0) {
+                    var h1 = "hi"
+                    let h2 = "favas"
+                    const h3 = "shekeeb"
+                    console.log(h2)
+                    // var is function scoped, while let, const are block scoped
+                }
+                console.log(h1)
+            }
+            myfunction()
+            console.log(h)
+        }
+        display()
+
+
+        //function with default parameter
+        function sum(num1 = 10, num2) {
+            plus = num1 + num2
+            return plus
+        }
+        console.log(sum(undefined, 20))  //num1 is not passed,so it takes default value 10
+
+        function sum(num1 = 10, num2) {
+            plus = num1 + num2
+            return plus
+        }
+        console.log(sum(30, 20)) //num1 i passed,so it takes 30 rather than 10
+
+
+        //class
+        class Sample {
+            constructor(num1, num2) {
+                this.num1 = num1;
+                this.num2 = num2
+            }
+            hai() {
+                console.log("The sum is " + (this.num1 + this.num2));
+            }
+        }
+        var obj1 = new Sample(10, 20);
+        var obj2 = new Sample(20, 50)
+        obj1.hai()
+        obj2.hai()
+        console.log(obj2.num1)
+    </script>
+
+</body>
+
+</html>
